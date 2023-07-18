@@ -8,7 +8,8 @@ public class Power_with_modulus {
         int c= sc.nextInt();
         int result=1;
         for (int i=0;i<b;i++){
-            result*=a;
+            a=a%c;
+            result=(result*a)%c;
         }
         System.out.println(result%c);
     }
